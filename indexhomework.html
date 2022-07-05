@@ -45,11 +45,11 @@
   <i>这几种强调</i><strong>有什么 区别？</strong>
   <u>这个？</u><em>这个？</em>
   <p>&it;!-- 这段注释需要出现在页面里面 --&gt;</p>
-  <p>
-    function a(){<br>
+
+    <pre>function a(){<br>
     &nbsp;return 8<br>
-    }
-  </p>
+    }</pre>
+
   <hr>
     <ul>
         <li>小学</li>
@@ -79,9 +79,11 @@
       <dd>    豆豆</dd>
     </dl>
     <hr>
+    <form target="_blank" name="谷歌搜索" action="https://www.google.com.hk/search" method="get">
     <h2>谷歌搜索</h2>
-    <input>
-    <input type ="button" value="我是二你大爷">
+    <input type="texe" name="user" >
+    <input type ="submit"  value="在新窗口打开搜索结果">
+    </form>
     <hr>
     <form>
       <p>个人信息调查表</p>
@@ -91,13 +93,102 @@
             <label><input type="radio" name="sex" value="male">男</label>
             <label><input type="radio" name="sex" value="female">女</label></dd>
         <dt>年龄</dt>
+            <dd>
+            <select name="age"  >
+                <option  hidden  >请输入</option>
+                <optgroup label="少年">
+                  <option value="volvo">1到6岁</option>
+                  <option value="saab">6到12岁</option>
+                  </optgroup>
+                <optgroup label="青年">
+                  <option value="fiat">12到15岁</option>
+                  <option value="audi">16到18岁</option>
+                  </optgroup>
+                <optgroup label="成年">
+                  <option value="fiat">18到21岁</option>
+                  <option value="audi">21到23岁</option>
+                  </optgroup>
+            </select>
+            </dd>
         <dt>生日</dt>
+            <dd>
+              <input h type="date">
+            </dd>
         <dt>生辰</dt>
+            <dd>
+              <input type="time">
+            </dd>
         <dt>照片</dt>
+            <dd>
+              <label><input hidden type="file" accept=".jpg">点我上传照片我比按钮好看一点</label>
+            </dd>
         <dt>自我介绍</dt>
+        <dd>
+          <textarea style="width: 200px;height: 200px;" >&lt;/textarea></textarea>
+        </dd>
       </dl>
+      <fieldset disabled>
+      <legend>
+        这里全部禁用了
+      </legend >
+      <input >
+      <input >
+      <input >
+      <input >
+      </fieldset>
+      <input type="submit" value="提交" >
+      <input type="reset" value="重置" >
     </form>
     <hr>
-    <span id="last"></span>
+    <table border="1" >
+      <colgroup>
+        <col >
+        <col >
+        <col style="background-color:#ff0000">
+        <col>
+      </colgroup>
+     <tr>
+      <th>标号</th>
+      <th>品名</th>
+      <th>竞价</th>
+      <th>出价</th>
+     </tr>
+     <tr>
+        <td>aaa</td>
+        <td>a</td>
+        <td rowspan="2">a</td>
+        <td>a</td>
+     </tr>
+     <tr>
+      <td>a</td>
+      <td>a</td>
+      <td>a</td>
+     </tr>
+     <tr>
+      <td>a</td>
+      <td>a</td>
+      <td>a</td>
+      <td>a</td>
+     </tr>
+      <tr>
+        <td>a</td>
+        <td>a</td>
+        <td>a</td>
+        <td>a</td>
+      </tr>
+    </table>
+    <hr>
+    <a href="https://www.jd.com" target="_blank"><img src="maotouy.jpg" style="width: 300px;"></a>
+    <hr>
+    <div><a  href="https://www.mi.com/">小米</a></div>
+    <iframe loading="lazy" src="https://nodejs.org/en/" width="200" height="200"></iframe>
+    <div>
+      <span>aaa</span>
+      <span>bbbbb</span>
+    </div>
+    <pre>
+<span>aaa bbbbbb</span></pre>
+    <hr>
+    <span>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span><span id="last">&lt;sapn>&lt;/sapn></span>
 </body>
 </html>
